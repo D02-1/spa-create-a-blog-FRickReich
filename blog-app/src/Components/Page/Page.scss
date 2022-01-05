@@ -1,0 +1,50 @@
+.Page
+{
+    margin: 65px 20px 0;
+
+    h1
+    {
+        text-align: center;
+    }
+
+    .editor
+    {
+        margin: 0 auto;
+        max-width: 250px;
+
+        input,
+        textarea,
+        button
+        {
+            width: calc(100% - 24px);
+            padding: 10px;
+            border: 2px solid #003049;
+            background: transparent;
+            margin: 0 0 10px 0;
+            border-radius: 5px;
+
+            &:focus
+            {
+                outline: none !important;
+                border: 2px solid #669bbc !important;
+            }
+
+            &::placeholder
+            {
+                color: black;
+            }
+        }
+        button
+        {
+            width: 100%;
+
+            &:hover
+            {
+                border: 2px solid #c1121f;
+                background: #780000;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
